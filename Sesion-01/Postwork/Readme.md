@@ -5,7 +5,7 @@
 
 - Formar equipos de entre dos y tres integrantes.
 - Practicar las consultas CRUD sobre la base de datos.
-- Crear las entidades y repositorios que usaremos para nuestro proyecto personal.
+- Crear las entidades y repositorios que usaremos para el proyecto.
 
 ## 🎯 Requisitos
 
@@ -15,9 +15,9 @@
 
 ## 🚀 Desarrollo
 
-**Antes de revisar los requerimientos de este postwork, formen equipos de entre dos y tres personas. Los cuales estarán trabajando durante todo el modúlo.**
+**Antes de revisar los requerimientos de este postwork, formen equipos de entre dos y tres personas. Los cuales estarán trabajando durante todo el módulo.**
 
-A continuación deberán definir el proyecto, con el que trabajarás el resto de tus postwork, además servirá como proyecto personal.
+A continuación deberán definir el proyecto, con el que trabajarán el resto de sus postwork.
 
 *Recuerda que el trabajo es en equipo.*
 

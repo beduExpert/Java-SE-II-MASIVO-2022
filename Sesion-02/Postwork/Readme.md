@@ -3,7 +3,7 @@
 ## 🎩 Objetivo 
 
 - Practicar el uso de hilos con Java.
-- Calcular promedios a través de múltiples hilos en tu proyecto personal.
+- Calcular promedios a través de múltiples hilos en su proyecto.
 
 ## 🎯 Requisitos 
 

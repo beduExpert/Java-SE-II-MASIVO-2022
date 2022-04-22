@@ -33,19 +33,14 @@ También deberás agregar una condición que imprima el mensaje "Recibido un obj
     }
     ```
 
-3. En el método iniciar agrega el valir inicial del acumulador.
+3. En el método iniciar agrega el valor inicial del acumulador.
 
   	```java
     acumulador = 0;
     ```
 
-4. En el método iniciar agrega el valir inicial del acumulador.
 
-  	```java
-    acumulador = 0;
-    ```
-
-5. Ahora en el **main**, agrega el else en caso de que no se aun número ni un string.
+4. Ahora en el **main**, agrega el else en caso de que no se aun número ni un string.
 
   	```java
     } else {

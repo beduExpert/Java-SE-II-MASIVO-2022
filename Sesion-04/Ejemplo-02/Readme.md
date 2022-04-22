@@ -8,6 +8,21 @@
 - JDK (o OpenJDK)
 
 ## Desarrollo
+
+La clase CompletableFuture es una extensión de la API Future de Java a
+partir de Java 5, pero no fue hasta Java 8 que se implementó la clase
+CompletableFuture. Esta es otra herramienta que nos ofrece Java para
+realizar código asíncrono.
+
+Con el método completedFuture() podemos crear un futuro ya
+directamente completo. Un futuro es un objeto que en algún momento
+tendrá el resultado de un método. Cuando se llame a ese método,
+devolverá inmediatamente el resultado, es decir, un objeto Futuro y se
+ejecutará asincrónicamente mientras el método que lo llama siga
+ejecutándose.
+
+<br/>
+
 Basándonos en el sistema de medición del ejemplo 1, haremos los cambios necesarios para que emplee la API Future de Java. Para ello: 
 
 1. Crearemos un nuevo método llamado **ejemploCompletableFuture**, en el que volveremos a generar la lista de valores enteros llamada id.
