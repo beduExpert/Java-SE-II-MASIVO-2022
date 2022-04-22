@@ -11,6 +11,16 @@
 
 ## Desarrollo
 
+ExecutorService nos simplifica las tareas asincronas proveyendo un pool de hilos que son manejados por esta API abstrayendonos del trabajo de crearlos y asignarles tareas a estos hilos.
+
+![Ejecución](img/img_02.jpg)
+
+<br/>
+
+Una vez revisada la información previa, comenzamos con los pasos del ejemplo.
+
+<br/>
+
 1. Nos ubicamos en el proyecto del ejemplo 2.
 
 2. Agregamos una nueva clase llamada `MiRunnablePool`, que será muy similar a la clase que creamos durante el ejemplo 2 pero ahora su implementación será:
@@ -63,7 +73,7 @@
         System.out.println("¿Terminaron nuestros hilos? " +  terminaron);
 
         if(!terminaron){
-            System.out.println("Llamando a shutdownNow()...");JDK 8 o superior
+            System.out.println("Llamando a shutdownNow()...");
             List<Runnable> pendientes = pool.shutdownNow(); //Termina los hilos que se estén ejecutando y retorna una lista de hilos pendientes a ejecutarse
             System.out.println(pendientes.size() + " hilos pendientes");
             terminaron = pool.awaitTermination(tiempoLimiteMs, TimeUnit.MILLISECONDS); //esperando otros 100ms a que terminen nuestros hilos

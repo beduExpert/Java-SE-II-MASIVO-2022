@@ -12,7 +12,11 @@
 
 ## Desarrollo
 
+Los hilos se dividen en de usuario y de demonio. La principal diferencia entre uno y otro, la encontramos en la maquina virtual donde garantiza la ejecución de los hilos de usuario mientras que los de demonio no necesita esperar a que se complete la ejecución del subproceso.
+
 1. Creamos un nuevo proyecto de Java asegurándonos que usemos el JDK 11 o superior.
+
+    ![Crear proyecto](img/img_02.png)
 
 2. Agregamos la clase `MiHilo` que herede de la clase `Thread`.
 

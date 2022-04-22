@@ -11,6 +11,23 @@
 
 ## Desarrollo
 
+A continuación se muestra una tabla comparativa de **Thread** vs **Runnable**.
+
+| Bases para la comparación | Hilo | Ejecutable |
+| ------------- | ------------- |------------- |
+|  |  |  |
+| BASIC | Cada hilo crea un objeto único y se asocia con él. | Varios hilos comparten los mismos objetos. |
+| Memoria | Como cada hilo crea un objeto único, se requiere más memoria. | Como varios subprocesos comparten el mismo objeto, se utiliza menos memoria. |
+| Extensible | En Java, la herencia múltiple no está permitida, por lo tanto, después de que una clase extiende la clase Thread, no puede extender ninguna otra clase. | Si una clase define un subproceso que implementa la interfaz Runnable, tiene la posibilidad de extender una clase. |
+| Utilizar | Un usuario debe extender la clase de subproceso solo si desea anular los otros métodos en la clase de subproceso. | Si solo desea especializar el método de ejecución, entonces implementar Runnable es una mejor opción. |
+| Acoplamiento | La clase Thread extendida introduce un acoplamiento estrecho ya que la clase contiene el código de la clase Thread y también el trabajo asignado al hilo | La implementación de la interfaz Runnable introduce un acoplamiento suelto, ya que el código de Thread está separado del trabajo de Threads. |
+
+<br/>
+
+Una vez revisada la información previa, comenzamos con los pasos del ejemplo.
+
+<br/>
+
 1. Nos ubicamos en el proyecto del ejemplo 1.
 
 2. Agregamos la clase `MiRunnable` que implementará la interfaz `Runnable`.

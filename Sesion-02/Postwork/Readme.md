@@ -13,21 +13,23 @@
 
 ## 🚀 Desarrollo
 
-Completa las siguientes instrucciones para completar tu segundo postwork:
+Completen las siguientes instrucciones para realizar el segundo postwork:
 
-1. Utiliza el proyecto del postwork 1.
+**Realizar en equipo**
 
-2. Crea un nuevo package con el nombre de multithreading 
+1. Utilicen el proyecto del postwork 1.
+
+2. Generen un nuevo package con el nombre de multithreading 
 
 3. Crea la clase CalculadorPromedioCurso que implemente un Runnable, su constructor deberá obtener el curso, con las calificaciones a promediar; Además el run deberá calcular el promedio y mostrar el resultado junto con el nombre del curso.
 
-4. Genera la clase Postwork2  la cual deberá generar los cursos (Cuatro como mínimo) con calificaciones aleatorias para cada uno de sus estudiantes. Como muestra dejaremos 20 estudiantes por curso.
+4. Generen la clase Postwork2  la cual deberá generar los cursos (Cuatro como mínimo) con calificaciones aleatorias para cada uno de sus estudiantes. Como muestra dejaremos 20 estudiantes por curso.
 
-5. Una vez generada la información deberás ejecutar el Runnable con un ExecutorService. Donde cada hilo deberá calcular cada curso.
+5. Una vez generada la información deberán ejecutar el Runnable con un ExecutorService. Donde cada hilo deberá calcular cada curso.
 
 <br/>
 
-A continuación te dejamos una imagen donde puede visualizar el flujo general que tomará la aplicación.
+A continuación dejamos una imagen donde pueden visualizar el flujo general que tomará la aplicación.
 
 ![diagrama1](img/diagrama1.png)
 
@@ -36,7 +38,7 @@ A continuación te dejamos una imagen donde puede visualizar el flujo general qu
 
 ## ✅ Checklist 
 
-Asegúrate que tu postwork contenga todo lo siguiente, ya que esto se evaluará al término del módulo.
+Asegúrate que el postwork contenga todo lo siguiente, ya que esto se evaluará al término del módulo.
 
 - [ ] CalculadorPromedioCurso es un runnable y su constructor recibe un curso.
 

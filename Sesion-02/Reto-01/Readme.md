@@ -20,7 +20,7 @@ Recuerda que debes instanciar e iniciar los objetos necesarios para cada hilo de
 <details>
 	<summary>Solución</summary>
 	
- 1. Para resolver este reto tendrás que crear dos clases diferentes que hereden de Thread, dentro de la primera en el método run solo deberás incluir un for del 1 al 10 inclusivo en el que esté la instrucción System.out.println y un sleep por 1 segundo.
+ 1. Para resolver este reto tendrás que crear dos clases diferentes que hereden de Thread, dentro de la primera en el método run solo deberás incluir un for del 1 al 10 dentro del for imprime con **System.out.println** además de un sleep por 1 segundo.
 
     ```java
     public class Hilo1 extends Thread {
@@ -38,7 +38,7 @@ Recuerda que debes instanciar e iniciar los objetos necesarios para cada hilo de
 	}
     ```
 
- 2. En la segunda clase, tendrás que agregar la instrucción System.out.println con el mensaje "Sigo en ejecución" y un sleep por 500 milisegundos dentro de un ciclo infinito.
+ 2. En la segunda clase, tendrás que agregar la instrucción **System.out.println** con el mensaje "Sigo en ejecución" y un sleep por 500 milisegundos dentro de un ciclo infinito.
 
 	```java
 	public class Hilo2 extends Thread {
