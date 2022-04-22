@@ -21,6 +21,19 @@ mvn test
 
 ## Desarrollo
 
+- Agregar librería
+    1. Agrega la siguiente librería dentro del archivo pom.xml arriba de: **<groupId>org.junit.jupiter</groupId>**
+
+        ```xml
+        <dependency>
+            <groupId>org.assertj</groupId>
+            <artifactId>assertj-core</artifactId>
+            <version>3.21.0</version>
+        </dependency>
+        ```
+
+        ![Crear prueba](img/figura02.png)
+
 - Clase contenedora
 
     1. Crea la clase Ejemplo2 en el paquete `org.bedu.jse2.demo.ejemplos`

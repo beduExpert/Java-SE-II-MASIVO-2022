@@ -41,8 +41,6 @@ mvn test
   2. Agrega el siguiente código:
 
       ```java
-      import static org.assertj.core.api.Assertions.assertThat;
-
       class Ejemplo3Test {
 
         @Test
@@ -88,4 +86,4 @@ mvn test
 <br/>
 <br/>
 
-[Siguiente ](../Reto-03/Readme.md)(Reto 03)
+[Siguiente ](../Postwork/Readme.md)(Postwork)

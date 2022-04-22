@@ -22,6 +22,10 @@ En el Ejemplo 1 creamos nuestra propia interfaz para convertir un `String` en un
 
 Para completar este reto reemplaza la interfaz propia por una de las genéricas que proporciona Java.
 
+__Tips: 
+   - Función generica: *Function<String, Integer>*
+   - En este caso podemos utilizar **apply** para convertir
+
 <br/>
 
 <details>
@@ -34,6 +38,14 @@ Para completar este reto reemplaza la interfaz propia por una de las genéricas 
  3. Reemplaza el uso de **StringToInteger** por **Function<String, Integer>** y el método **convertir** por **apply** (el método de la interfaz *Function*).
  
     ![Cambio de interfaz](img/figura01.png)
+
+    ```java
+    private final Function<String, Integer> parser = Integer::parseInt;
+
+    Integer sumar(String a, String b) {
+        return parser.apply(a) + parser.apply(b);
+    }
+    ```
 
  4. Vuelve a ejecutar la prueba.
 

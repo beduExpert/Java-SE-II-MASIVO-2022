@@ -51,7 +51,9 @@ mvn test
 
         ![Crear prueba](img/figura01.png)
 
-    2. Agrega el siguiente código:
+    2. Agrega el siguiente código: 
+    
+        Nota: Recuerda importar **@Test** y **@DisplayName** desde org.junit.jupiter
 
         ```java
         @Test

@@ -29,7 +29,6 @@
 	
 - Streams	
 	- [Ejemplo 03](./Ejemplo-03/Readme.md)
-	- [Reto 03](./Reto-03/Readme.md)
 
 - Postwork
 

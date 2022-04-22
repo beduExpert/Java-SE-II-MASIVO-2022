@@ -28,7 +28,9 @@ En el Ejemplo 2 creamos un método capaz de recibir un objeto Iterable de entero
 
     Dentro de la clase ejemplo 2.
 
-2. Una vez agregado el método, ejecuta la prueba desde la clase **Ejemplo2Test**
+2. Una vez agregado el método, agrega el caso de prueba que ejecute el método agregado en el punto uno.
+
+3. Ejecuta la prueba desde la clase **Ejemplo2Test**
 
 
 <br/>

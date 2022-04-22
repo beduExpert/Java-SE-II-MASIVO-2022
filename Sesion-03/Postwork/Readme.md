@@ -3,7 +3,6 @@
 ## 🎩 Objetivo
 
 - Practicar lo aprendido sobre programación funcional.
-- Utilizando programación funcional
 - Hacer uso de la programación funcional para generar y ordenar una lista de datos (descendente y ascendente).
 
 ## 🎯 Requisitos
@@ -14,26 +13,28 @@
 
 ## 🚀 Desarrollo
 
-Completa las siguientes instrucciones para completar tu tercer postwork:
+**Realizar en equipo**
 
-1. Utiliza el proyecto del postwork 2.
+Completa las siguientes instrucciones para completar el tercer postwork:
+
+1. Utilicen el proyecto del postwork 2.
 
 2. Crea un nuevo package con el nombre de tools 
 
-3. Genera la clase ReporteCalificaciones la cual se encargará de:
+3. Generen la clase **ReporteCalificaciones** la cual se encargará de:
 
     - Generar la lista
-    - Ordena alfabéticamente (Curso)
-    - Ordena por calificaciones (Descendente)
+    - Ordenar alfabéticamente (Curso)
+    - Ordenar por calificaciones (Descendente)
     - ***Recuerda utilizar map, sort, collect**
 
-4. Crea la prueba ReporteCalificacionesTest la cual se encargará de generar:
+4. Crea la prueba **ReporteCalificacionesTest** la cual se encargará de generar:
     - Materia
     - Estudiantes (Por lo menos tres)
     - Curso
     - Enviar la información a la clase creada en el paso tres
 
-5. Agrega las siguientes pruebas a ReporteCalificacionesTest:
+5. Agrega las siguientes pruebas a **ReporteCalificacionesTest**:
 
     - Ordena alfabéticamente (Curso)
     - Ordena por calificaciones (Descendente)
@@ -43,7 +44,7 @@ Completa las siguientes instrucciones para completar tu tercer postwork:
 
 ## ✅ Checklist 
 
-Asegúrate que tu postwork contenga todo lo siguiente, ya que esto se evaluará al término del módulo.
+Asegúrate que el postwork contenga todo lo siguiente, ya que esto se evaluará al término del módulo.
 
 - [ ] ReporteCalificaciones puede generar la lista de calificaciones.
 
