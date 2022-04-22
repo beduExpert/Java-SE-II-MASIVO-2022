@@ -26,6 +26,8 @@ mvn test
 
 1. Crea una clase de prueba para EquipoRepository con el contenido que se muestra en la figura.
 
+   ![Prueba](img/figura08.png)
+   ![Prueba](img/figura09.png)
    ![Prueba](img/figura01.png)
 
 2. Agrega una prueba donde crees un equipo y lo guardes como se muestra.
@@ -56,7 +58,11 @@ mvn test
          equipo.setNombre("Equipo prueba");
 
          equipo = repository.save(equipo);
-## Desarrollo
+      }
+   }
+
+3. A continuación agrega una función **Iterable** para buscar por nombre, dentro de la interface **EquipoRepository**
+
    ![Query method](img/figura03.png)
 
    ```java

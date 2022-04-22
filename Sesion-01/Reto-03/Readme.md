@@ -29,7 +29,7 @@
       private PartidoRepository partidoRepository;
       ```
 
-  2. Limpia los datos del **partidoRepository** desde el método **cleanDatabase**.
+  2. Limpia los datos del **partidoRepository** desde el método **cleanDatabase**. Nota: Recuerda primero eliminar partidoRepository y después repository.
 
       ```java
       partidoRepository.deleteAll();
@@ -67,6 +67,9 @@
   4. Crea el QueryMethod:
  
       ![Query method](img/figura02.png)
+      ```java
+      Iterable<Partido> findAllByEquipo1NombreAndEquipo2Nombre(String nombreEquipo1, String nombreEquipo2);
+      ```
 
   5. Agrega el método para busca por nombres, dentro de **PartidoRepositoryTest**.
 

@@ -19,7 +19,17 @@ En el Ejemplo 02 creaste tu primera entidad y repositorio. En ese ejercicio la c
 
 Para este reto deberás crear la entidad y repositorio de un partido.
 
-Deberás hacer uso de las anotaciones **@ManyToOne** y **@JoinColumn**.
+A continuación podrás ver el díagrama de la tabla partido.
+
+![Diagrama partido](img/figura05.png)
+
+Deberás hacer uso de las anotaciones **@ManyToOne** y **@JoinColumn**. A continuación te dejamos un ejemplo de como utilizar ManyToOne y JoinColumn
+
+```java
+@ManyToOne
+@JoinColumn(name = "equipos1_fk", referencedColumnName = "id")
+private Equipo equipo1;
+```
 
 <br/>
 

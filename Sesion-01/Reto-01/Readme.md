@@ -2,7 +2,7 @@
 
 ## Objetivo
 
-- Realizar las correcciones necesarias en la aplicación para poder hacer un número mayor de operaciones adicionales a la consulta.
+- Realizar las correcciones necesarias en la aplicación para poder hacer un número mayor de operaciones adicionales a la consulta (CRUD).
 
 ## Requisitos
 
