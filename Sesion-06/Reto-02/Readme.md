@@ -15,12 +15,27 @@ En el Ejercicio 2 creamos una clase que aprovecha el método toString de Object.
 
 Repite este comportamiento en un método estático.
 
+_Nota: Recuerda utilizar `toString()`
+
 <br/>
 
 <details>
   <summary>Solución</summary>
 
-  1. Agrega una nueva prueba como se muestra
+  1. Crea una clase con la siguiente definición
+    
+      <img src="img/figura02.png" alt="Método"/>
+
+      ```java
+      public class MethodConverter {
+
+        public static <E> String convertToString(E input){
+            return input.toString();
+        }
+      }
+      ```
+
+  2. Agrega una nueva prueba a la clase creada en el punto 1, como se muestra
     
       <img src="img/figura01.png" alt="Nueva prueba"/>
 
@@ -36,19 +51,6 @@ Repite este comportamiento en un método estático.
             String output = MethodConverter.convertToString(input);
 
             assertEquals(expected, output);
-        }
-      }
-      ```
-  
-  2. Crea una clase con la siguiente definición
-    
-      <img src="img/figura02.png" alt="Método"/>
-
-      ```java
-      public class MethodConverter {
-
-        public static <E> String convertToString(E input){
-            return input.toString();
         }
       }
       ```

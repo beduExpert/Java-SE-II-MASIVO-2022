@@ -20,7 +20,20 @@ Para este ejercicio crea una clase que permita convertir un objeto cualquiera a 
 <details>
   <summary>Solución</summary>
 
-  1. Agrega una nueva prueba como se muestra
+  1. Crea una clase con la siguiente definición
+    
+      <img src="img/figura02.png" alt="Método"/>
+
+      ```java
+      public class Converter <E> {
+
+        public String convertir(E param){
+            return param.toString();
+        }
+      }
+      ```
+
+  2. Agrega una nueva prueba a la clase creada en el punto 1, como se muestra
     
       <img src="img/figura01.png" alt="Nueva prueba"/>
 
@@ -48,20 +61,7 @@ Para este ejercicio crea una clase que permita convertir un objeto cualquiera a 
       }
       ```
   
-  2. Crea una clase con la siguiente definición
-    
-      <img src="img/figura02.png" alt="Método"/>
-
-      ```java
-      public class Converter <E> {
-
-        public String convertir(E param){
-            return param.toString();
-        }
-      }
-      ```
-  
-  3. Vuelve a ejecutar la prueba
+  3. Ejecutar la prueba
 
       <img src="img/figura03.png" alt="Método"/>
 

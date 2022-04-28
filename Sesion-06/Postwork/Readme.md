@@ -13,9 +13,11 @@
 
 ## 🚀 Desarrollo
 
+**Realizar en equipo**
+
 Uno de los principales usos de Generics es poder implementar algoritmos independientes de sus parámetros.
 
-Te recomendamos revisar la siguiente página como recurso adicional [Merge Sort](https://www.tutorialspoint.com/data_structures_algorithms/merge_sort_algorithm.htm)
+Recomendamos revisar la siguiente página como recurso adicional [Merge Sort](https://www.tutorialspoint.com/data_structures_algorithms/merge_sort_algorithm.htm)
 
 
 
@@ -23,9 +25,9 @@ Crea una implementación del algoritmo [Merge Sort](https://www.tutorialspoint.c
 
 <br/>
 
-Completa las siguientes instrucciones para completar el sexto postwork:
+Completen las siguientes instrucciones para completar el sexto postwork:
 
-1. Utiliza el proyecto de postwork 5.
+1. Utilicen el proyecto del postwork 5.
 
 2. Dentro del package tools crea la clase MergeSortAlgorithm. La cual estará encargada de ordenar de dos maneras diferentes y mezclar los dos ordenamientos.
 
@@ -54,7 +56,7 @@ Completa las siguientes instrucciones para completar el sexto postwork:
     }
     ```
 
-5. Ahora agrega el merge el cual mezclará las listas ordenadas.
+5. Ahora agreguen el merge el cual mezclará las listas ordenadas.
 
     ```java
     private static <T> List<T> merge(Deque<T> stackA, Deque<T> stackB, Comparator<T> comparator) {
@@ -75,7 +77,7 @@ Completa las siguientes instrucciones para completar el sexto postwork:
     }
     ```
 
-6. Por último agrega los test para la clase MergeSortAlgorithm.
+6. Por último agreguen los test para la clase MergeSortAlgorithm.
 
     - Con la cual generamos una colección con cien mil números aleatorios.
     
@@ -138,7 +140,7 @@ Completa las siguientes instrucciones para completar el sexto postwork:
 
 ## ✅ Checklist 
 
-Asegúrate que tu postwork contenga todo lo siguiente, ya que esto se evaluará al término del módulo.
+Asegúrate que el postwork contenga todo lo siguiente, ya que esto se evaluará al término del módulo.
 
 - [ ] MergeSortAlgorithm tiene un método que ordena por números números naturales con un Comparable<t>.
 
@@ -146,7 +148,7 @@ Asegúrate que tu postwork contenga todo lo siguiente, ya que esto se evaluará 
 
 - [ ] MergeSortAlgorithm tiene un método para mezclar los dos tipos de ordenamiento.
 
-- [ ] La prueba MergeSortAlgorithmTest genera y agrega cien mil números aleatorios a una lista.
+- [ ] La prueba MergeSortAlgorithmTest genera y agreguen cien mil números aleatorios a una lista.
 
 - [ ] Existen dos test para ejecutar los dos tipos de sort creados en la clase MergeSortAlgorithm.
 

@@ -9,9 +9,23 @@
 - Apache Maven 3.8.4 o superior
 - JDK (o OpenJDK)
 
+<br/>
+
+Los generics (genéricos) en Java nos permiten hacer objetos que son robustos a la hora de compilar el código fuente para ser interpretado por la máquina virtual de Java. Fueron introducidos a partir de Java 5 dentro del framework Collections.
+
+Al definir una clase o interfaz genérica,  estamos definiendo un tipo de plantilla a partir de la cual se crearán posteriormente clases o interfaces que actuarán como tipos concretos.
+
+El objetivo de esto es reducir errores y agregar una capa adicional de abstracción sobre los tipos.
+
+
+<br/>
+
 ## Procedimiento
 
 1. Crea un nuevo proyecto con el siguiente pom.xml
+
+    ![Crear proyecto](./img/img_02.png)
+
 
     ```xml
     <?xml version="1.0" encoding="UTF-8"?>

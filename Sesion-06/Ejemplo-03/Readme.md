@@ -10,7 +10,22 @@
 
 ## Procedimiento
 
-1. Crea una clase de prueba con el siguiente código
+1. Crea la clase LimitedConverter de la siguiente manera
+
+    ```java
+    package org.bedu.jse2.generics;
+
+    public class LimitedConverter <E extends Number>{
+
+        public boolean esMayorQue(E number1, E number2) {
+            return (number1.doubleValue() - number2.doubleValue()) > 0;
+        }
+    }
+    ```
+
+    Al establecer el límite superior podemos usar métodos de ese tipo, en este caso .doubleValue.
+
+2. Crea una clase de prueba con el siguiente código
 
     ```java
     package org.bedu.jse2.generics;
@@ -47,24 +62,11 @@
     }
     ```
 
-2. Crea la clase LimitedConverter de la siguiente manera
-
-    ```java
-    package org.bedu.jse2.generics;
-
-    public class LimitedConverter <E extends Number>{
-
-        public boolean esMayorQue(E number1, E number2) {
-            return (number1.doubleValue() - number2.doubleValue()) > 0;
-        }
-    }
-    ```
-
-    Al establecer el límite superior podemos usar métodos de ese tipo, en este caso .doubleValue.
-
 3. Ejecuta las pruebas.
 
     ![Pruebas](./img/img_01.png)
+
+4. Comenten los resultados obtenidos.
 
 <br/>
 <br/>
