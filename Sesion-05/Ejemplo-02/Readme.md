@@ -4,6 +4,15 @@
 ## Objetivos
 * Familiarizarnos con algunas de las interfaces de Project Reactor
 
+<br/>
+
+**Project Reactor**
+Fue concebida con la implicación del equipo responsable de **RxJava 2** por lo que comparten gran parte de la base arquitectónica. Su principal ventaja es que al ser parte de Pivotal ha sido la elegida como fundación del futuro Spring 5 WebFlux Framework.
+
+Este API introduce los tipos **Flux** y **Mono** como implementaciones de **Publisher**, los cuales generan series de 0…N y 0…1 elementos respectivamente.
+
+<br/>
+
 ## Requisitos
 - Apache Maven 3.8.4 o superior
 - JDK (o OpenJDK)
@@ -54,7 +63,21 @@ mvn test
 
     Si ejecutas la prueba en este momento obtendrás un error ya que estamos regresando `null`.
 
-5. Reemplaza el código de la clase de la siguiente manera
+5. Genera la clase **ReactorFluxGenerator**
+
+    ```java
+    import reactor.core.publisher.Flux;
+
+    public class ReactorFluxGenerator {
+        private static final Integer[] LISTA = {1,2,3,4,5,6};
+
+        public static Flux<Integer> fluxStream(){
+            return Flux.fromArray(LISTA);
+        }
+    }
+    ```
+
+6. Reemplaza el código de la clase de la siguiente manera
 
     **RxJavaObservableGenerator** es una clase que genera un observable a partir de una lista de números del 1 al 6.
 
@@ -70,20 +93,6 @@ mvn test
                .fluxStream()
                .reduce(0,(a,b) -> a + b)
                .block();
-    }
-    ```
-
-6. Genera la clase **ReactorFluxGenerator**
-
-    ```java
-    import reactor.core.publisher.Flux;
-
-    public class ReactorFluxGenerator {
-        private static final Integer[] LISTA = {1,2,3,4,5,6};
-
-        public static Flux<Integer> fluxStream(){
-            return Flux.fromArray(LISTA);
-        }
     }
     ```
 

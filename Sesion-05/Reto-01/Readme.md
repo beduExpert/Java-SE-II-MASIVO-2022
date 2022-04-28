@@ -13,6 +13,8 @@ En el Ejercicio 1 partimos de un objeto `Observable<Integer>` para obtener su su
 
 En esta ocasión debemos elevar al cubo cada elemento y sumar sólo los que sean mayores a 50.
 
+*_Nota: Puedes resolver el reto utilizando `.map` y `.filter`.*
+
 <br/>
 
 <details>

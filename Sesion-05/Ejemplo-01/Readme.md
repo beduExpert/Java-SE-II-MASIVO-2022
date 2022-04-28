@@ -7,6 +7,21 @@
 - Apache Maven 3.8.4 o superior
 - JDK (o OpenJDK)
 
+<br/>
+
+La programación reactiva es un paradigma de programación enfocado al manejo de flujos de  datos asíncronos y al uso eficiente de recursos cuyos principales objetivos son:
+
+1. Propagar los cambios en un sistema requiriendo la menor cantidad de esfuerzo.
+2. Hacer más sencillo el trabajar con flujos asíncronos de datos.
+
+En cuanto a los beneficios de la programación reactiva tenemos:
+
+- **Escabilidad**. Implementación débilmente acoplada, escalable y que tiende a aislar fallos. La escalabilidad se refiere a la propiedad de aumentar la capacidad de trabajo o de tamaño de un sistema sin comprometer el funcionamiento y calidad normales del sistema. 
+- **Ahorro**. Ofrece hacer más con menos, en específico para procesar cargas de trabajo más altas con menos hilos. Esto permite el uso eficiente de los recursos lo que significa gastar menos dinero en servidores.
+
+
+<br/>
+
 ## Maven
 
 Para ejecutar las pruebas de maven usa:
@@ -16,7 +31,7 @@ mvn test
 
 ## Procedimiento
 
-1. Descarga el código del ejemplo 1
+1. Descarga el código del [ejemplo 1](./codigo/)
 
 2. Crea la clase Ejemplo1 en el paquete `org.bedujse.demo.reactive.ejemplo1`
 
@@ -79,7 +94,7 @@ mvn test
 
 7. Vuelve a ejecutar la prueba
 
-    Nota que estamos usando programación funcional para reducir el conjunto de enteros a su suma. El resultado de `.reduce` es un `Single<Integer>`. En el primer método regresamos ese objeto para y en la prueba usamos `.subscribe` para hacer la acerción.
+    Nota que estamos usando programación funcional para reducir el conjunto de enteros a su suma. El resultado de `.reduce` es un `Single<Integer>`. En el primer método regresamos ese objeto y en la prueba usamos `.subscribe` para hacer la acerción.
 
     En el segundo caso usamos `.blockingGet` el cual bloquea el hilo y arroja el resultado una vez que se tiene.
 

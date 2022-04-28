@@ -13,21 +13,23 @@
 
 ## 🚀 Desarrollo
 
-Completa las siguientes instrucciones para completar el quinto postwork:
+**Realizar en equipo**
 
-1. Utiliza el proyecto de postwork 4.
+Completen las siguientes instrucciones para completar el quinto postwork:
+
+1. Utilicen el proyecto del postwork 4.
 
 2. Crea un nuevo package con el nombre de reactive 
 
-3. Dentro del nuevo package crea la clase CalcularPromedioCursoRx, dentro agrega un método para calcular el promedio de las calificaciones de un curso.
+3. Dentro del nuevo package generen la clase CalcularPromedioCursoRx, dentro agreguen un método para calcular el promedio de las calificaciones de un curso.
 
-    - Recuerda utilizar publisher:
+    - Recuerden utilizar publisher:
         
         - Flux
 
         - Mono
 
-4. Agrega el test para CalcularPromedioCursoRx, la cual:
+4. Agreguen el test para CalcularPromedioCursoRx, la cual:
 
     - Generará estudiantes (Por lo menos 3).
 
@@ -43,7 +45,7 @@ Completa las siguientes instrucciones para completar el quinto postwork:
 
 ## ✅ Checklist 
 
-Asegúrate que tu postwork contenga todo lo siguiente, ya que esto se evaluará al término del módulo.
+Asegúrate que el postwork contenga todo lo siguiente, ya que esto se evaluará al término del módulo.
 
 - [ ] CalcularPromedioCursoRx puede calcular los promedios de un curso, utilizando Flux y Mono de publisher.
 

@@ -34,7 +34,7 @@ En esta ocasión debemos elevar al cubo cada elemento y sumar sólo los que sean
       }
       ```
    
-   2. Agrega el siguiente método a la clase Ejemplo1
+   2. Agrega el siguiente método a la clase Ejemplo2
    
       <img src="img/figura02.png" alt="Método"/>
 
@@ -59,6 +59,12 @@ En esta ocasión debemos elevar al cubo cada elemento y sumar sólo los que sean
    - Cuando cada valor puede generar varios valores más (expansion de la lista)
 
    Ten en cuenta que flatMap procesa en paralelo, por lo que el resultado final debe ser independiente del orden de ejecución de las operaciones/funciones (deben ser funciones puras).
+
+   *Una función es pura si se cumplen las siguientes dos condiciones:* 
+   - La función siempre produce el mismo resultado cuando se le dan los mismos argumentos. 
+   - La función no produce efectos secundarios.
+      - Ejemplos de efectos secundarios: modificar una variable global o escribir en la consola.
+
 
 
 </details>
