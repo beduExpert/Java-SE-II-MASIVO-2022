@@ -13,9 +13,11 @@
 
 ## 🚀 Desarrollo
 
-Completa las siguientes instrucciones para completar el séptimo postwork:
+**Realizar en equipo**
 
-1. Clona el proyecto del Reto 03: 
+Completen las siguientes instrucciones para completar el séptimo postwork:
+
+1. Clonen el proyecto del [Reto 03](../Reto-03/): 
 
 2. En el archivo **pom** cambiar la siguiente dependencia:
 
@@ -42,21 +44,42 @@ Completa las siguientes instrucciones para completar el séptimo postwork:
 4. Modificamos la clase EmpleadoRepository pasarla a ser una interfaz:
 
     ```java
+    package com.example.demo.repository;
+
+    import com.example.demo.entity.Empleado;
+    import org.springframework.data.mongodb.repository.ReactiveMongoRepository;
+    import org.springframework.stereotype.Repository;
+
+    @Repository
     public interface EmpleadoRepository extends ReactiveMongoRepository<Empleado, String>{
+
     }
     ```
 
-5. Agregamos el uri de conexión en el archivo **application.properties** lo encontrarás dentro de **resources**.
+5. Ahora generamos el uri de conexión desde MongoAtlas.
+
+    - Damos clic en *Connect*
+    ![Paso 1](./img/img_06.png)
+
+    - Después *Connect your application*
+    ![Paso 2](./img/img_07.png)
+
+    - Luego seleccionamos driver Java y versión 4.3
+    ![Paso 3](./img/img_08.png)
+
+    - Por último damos clic en el botón de *Copiar*
+
+6. Agregamos el uri de conexión en el archivo **application.properties** lo encontrarás dentro de **resources**.
 
     ```properties
     spring.data.mongodb.uri=mongodb+srv://<user>:<password>@cluster0.ijbvb.mongodb.net/empleado?retryWrites=true&w=majority
     ```
 
-6. Modifica el controlador con los métodos que nos devuelve la interfaz.
+7. Modifica el controlador con los métodos que nos devuelve la interfaz.
 
     ![Metodos](img/img_01.png)
 
-7. Por último ejecuta los tres servicios creados, notarás que ahora los datos se almacenan en MongoDB Atlas.
+8. Por último ejecuta los tres servicios creados, notarás que ahora los datos se almacenan en MongoDB Atlas.
 
     - Crear empleado
 
@@ -78,7 +101,7 @@ Completa las siguientes instrucciones para completar el séptimo postwork:
 
 ## ✅ Checklist 
 
-Asegúrate que tu postwork contenga todo lo siguiente, ya que esto se evaluará al término del módulo.
+Asegúrate que el postwork contenga todo lo siguiente, ya que esto se evaluará al término del módulo.
 
 - [ ] El proyecto no muestra warnings ni errores durante su ejecución.
 

@@ -10,11 +10,17 @@
 
 ## Procedimiento
 
-1. Crea el proyecto con la dependencia de spring web y lombok dentro de **pom.xml**
+1. Crea el proyecto con la dependencia de **Spring web** y **lombok** dentro de **pom.xml**, utilizando [Spring.io](https://start.spring.io/)
 
     ![Postman](img/img_01.png)
 
-2. Crear un paquete llamado "entity" el cual contenga la clase "Auto" con el siguiente codigo:
+2. Da clic en Generate para descargar el archivo zip.
+
+    ![Postman](img/img_04.png)
+
+3. Descomprime el proyecto y abre el proyecto con tu IDE preferido.
+
+4. Crea un paquete llamado "entity" el cual contenga la clase "Auto" con el siguiente codigo:
 
     ```java
     package com.example.demo.entity;
@@ -30,17 +36,7 @@
     }
     ```
 
-    Agrega la dependencia de **lombok**
-
-    ```xml
-    <dependency>
-        <groupId>org.projectlombok</groupId>
-        <artifactId>lombok</artifactId>
-        <version>1.18.22</version>
-    </dependency>
-    ```
-
-3. Crear un paquete llamado "controller" el cual contenga la clase "DemoController" con el siguiente codigo:
+5. Crear un paquete llamado "controller" el cual contenga la clase "DemoController" con el siguiente codigo:
 
     ```java
     package com.example.demo.controller;
@@ -64,12 +60,12 @@
     }
     ```
 
-4. Una vez terminado lo ejecutamos, abrimos postman y colocamos la informacion como se ve en la imagen:
+6. Una vez terminado lo ejecutamos, abrimos postman y colocamos la informacion como se ve en la imagen:
 
     ![Postman](img/img_02.png)
 
 
-5. Damos click en Send y se mostrará en consola la informacion que enviamos.
+7. Damos click en Send y se mostrará en consola la informacion que enviamos.
 
     ![Terminal](img/img_03.png)
 

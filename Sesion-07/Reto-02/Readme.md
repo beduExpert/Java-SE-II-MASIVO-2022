@@ -35,13 +35,16 @@ En nuestro DemoController crear el metodo con la ruta "/casa" en el proyecto y q
     <img src="img/img_01.png" alt="Nueva clase"/>
 
     ```java
+   package com.example.demo.entity;
+
+    import lombok.Data;
+
     @Data
     public class Casa {
 
         private int id;
         private String color;
         private int pisos;
-
     }
     ```
   

@@ -14,9 +14,11 @@ En el Ejercicio 1 partimos de un proyecto el cual imprime "Hola mundo"
 
 ![hola mundo](./img/img_01.png)
 
-En esta ocasión debemos colocar una nueva ruta "/data/nuevo" en el proyecto por lo que hay que modificar la clase controller.
+En esta ocasión debemos colocar una nueva ruta "/data/nuevo" en el proyecto por lo que hay que crear un nuevo controlador, similar a `HelloController`.
 
-Y este nuevo metodo llamado "nuevo" y que mande a imprimir al navegador "Mi nuevo mensaje!".
+![hola mundo](./img/img_05.png)
+
+Este nuevo metodo llamado "nuevo" debe imprimir en el navegador "Mi nuevo mensaje!".
 
 <br/>
 
@@ -26,7 +28,7 @@ Y este nuevo metodo llamado "nuevo" y que mande a imprimir al navegador "Mi nuev
 1. Crea la clase NuevoController
 
     <img src="img/img_02.png" alt="Nueva clase"/>
-  
+
 2. Dentro de la nueva clase agrega el siguiente código:
     
     <img src="img/img_03.png" alt="Código"/>
@@ -54,7 +56,7 @@ Y este nuevo metodo llamado "nuevo" y que mande a imprimir al navegador "Mi nuev
 
 4. Vuelve a ejecutar la prueba
 
-    Consulya la url **localhost:9080/data/nuevo**
+    Consulta la url **localhost:9080/data/nuevo**
 
     <img src="./img/img_04.png" alt="Resultado"/>
 

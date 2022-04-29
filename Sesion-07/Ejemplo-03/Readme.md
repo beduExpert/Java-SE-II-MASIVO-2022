@@ -13,13 +13,17 @@
 
 ## Procedimiento
 
-1. Crea el proyecto demo con la dependencia de spring reactive web
+1. Crea el proyecto con la dependencia de **Spring reactive web** y **lombok** dentro de **pom.xml**, utilizando [Spring.io](https://start.spring.io/)
 
     ![Postman](img/img_01.png)
 
-2. Descomprimir el proyecto
+2. Da clic en Generate para descargar el archivo zip.
 
-3. Abrir el proyecto con su IDE preferido y crear un paquete llamado "entity" el cual contenga la clase "Empleado" con el siguiente codigo:
+    ![Postman](img/img_04.png)
+
+3. Descomprime el proyecto y abre el proyecto con tu IDE preferido.
+
+4. Crea un paquete llamado "entity" el cual contenga la clase "Empleado" con el siguiente codigo:
 
     ```java
     import lombok.AllArgsConstructor;
@@ -36,17 +40,7 @@
     }
     ```
 
-    Agrega la dependencia de **lombok**
-
-    ```xml
-    <dependency>
-        <groupId>org.projectlombok</groupId>
-        <artifactId>lombok</artifactId>
-        <version>1.18.22</version>
-    </dependency>
-    ```
-
-4. Crear un paquete llamado "repository" el cual contenga la clase "EmpleadoRepository" con el siguiente codigo:
+5. Crear un paquete llamado "repository" el cual contenga la clase "EmpleadoRepository" con el siguiente codigo:
     
     ```java
     import com.example.demo.entity.Empleado;
@@ -94,7 +88,7 @@
     }
     ```
 
-5. Crear un paquete llamado "controller" el cual contenga la clase "DemoController" con el siguiente codigo:
+6. Crear un paquete llamado "controller" el cual contenga la clase "DemoController" con el siguiente codigo:
 
     ```java
     import com.example.demo.entity.Empleado;
