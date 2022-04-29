@@ -1,8 +1,7 @@
 # Reto 2
 
 ## Objetivos
-
-* Reafirmar el conocimiento de Spring boot
+* Reafirmar el conocimiento de Spring webflux.
 
 ## Requisitos
 
@@ -11,61 +10,54 @@
 
 ## Desarrollo
 
-En el Ejercicio 02 partimos de un proyecto el cual recibe un Auto
+En el Ejercicio 3 solo ocupamos el metodo findAllEmpleados() del EmpleadoRepository.
 
-Para completar este reto agrega una nuevo metodo de tipo post que reciba un objeto de tipo "Casa". 
-
-Para esto creamos la clase con los siguientes atributos:
+Ahora ocuparemos los otros dos metodos:
 
 ```java
-private int id;
-private String color;
-private int pisos;
+findEmpleadoById(String id)
+
+updateEmpleado(Empleado employee)
 ```
 
-En nuestro DemoController crear el metodo con la ruta "/casa" en el proyecto y que imprima el objeto.
+El primero debera ser de tipo GET con la ruta /{id} y el segundo de tipo POST con la ruta /update.
+
+Estos nuevos endpoint se definirán en DemoController con los nombres de metodos "getEmpleadoById" y "updateEmpleado".
 
 <br/>
 
 <details>
   <summary>Solución</summary>
 
-1. Crea la clase Casa dentro de entity
+1. Agrega el método **getEmpleadoById** al demo controller.
 
-    <img src="img/img_01.png" alt="Nueva clase"/>
+    <img src="img/img_01.png" alt="Código"/>
 
     ```java
-   package com.example.demo.entity;
-
-    import lombok.Data;
-
-    @Data
-    public class Casa {
-
-        private int id;
-        private String color;
-        private int pisos;
+    @GetMapping("/{id}")
+    private Mono<Empleado> getEmpleadoById(@PathVariable String id) {
+        return empleadoRepository.findEmpleadoById(id);
     }
     ```
   
-2. Dentro del DemoController agrega el nuevo servicio apuntando a la entidad Casa:
+2. Dentro del DemoController el método **updateEmpleado**.
     
     <img src="img/img_02.png" alt="Código"/>
 
     ```java
-    @PostMapping("/casa")
-    public void recibeCasa(@RequestBody Casa casa){
-        log.info(casa.toString());
+    @PostMapping("/update")
+    private Mono<Empleado> updateEmpleado(@RequestBody Empleado empleado) {
+        return empleadoRepository.updateEmpleado(empleado);
     }
     ```
 
-3. Ejecuta el proyecto y consulta el nuevo servicio desde Postman.
+3. Ejecuta el proyecto y consulta el empleado con el id 1 con GET desde Postman.
 
     <img src="img/img_03.png" alt="Código"/>
 
-4. Comprueba los datos desde la terminal.
+4. Cambia la petición a POST y el endpoint por "/empleados/update", recuerda pasar en el body el json con el id del empleado y el nuevo nombre.
 
-    <img src="./img/img_04.png" alt="Resultado"/>
+    <img src="img/img_04.png" alt="Resultado"/>
 
 </details>
 
@@ -74,4 +66,4 @@ En nuestro DemoController crear el metodo con la ruta "/casa" en el proyecto y q
 <br/>
 <br/>
 
-[Siguiente ](../Ejemplo-03/Readme.md)(Ejemplo 03)
+[Siguiente ](../Postwork/Readme.md)(Postwork)

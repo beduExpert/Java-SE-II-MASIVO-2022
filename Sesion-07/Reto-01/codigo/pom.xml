@@ -1,70 +1,56 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <modelVersion>4.0.0</modelVersion>
-  <groupId>com.example</groupId>
-  <artifactId>demo</artifactId>
-  <version>1.0-SNAPSHOT</version>
-  <packaging>war</packaging>
-  <properties>
-    <openliberty.maven.version>3.1</openliberty.maven.version>
-    <final.name>demo</final.name>
-    <failOnMissingWebXml>false</failOnMissingWebXml>
-    <openliberty.version>[19.0.0.9,)</openliberty.version>
-    <maven.compiler.source>1.8</maven.compiler.source>
-    <maven.compiler.target>1.8</maven.compiler.target>
-  </properties>
-  <dependencies>
-    <dependency>
-      <groupId>org.eclipse.microprofile</groupId>
-      <artifactId>microprofile</artifactId>
-      <version>3.0</version>
-      <type>pom</type>
-      <scope>provided</scope>
-    </dependency>
-  </dependencies>
-  <build>
-    <finalName>demo</finalName>
-  </build>
-  <profiles>
-    <profile>
-      <id>liberty</id>
-      <activation>
-        <activeByDefault>true</activeByDefault>
-      </activation>
-      <build>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.2.1.RELEASE</version>
+        <relativePath/> <!-- lookup parent from repository -->
+    </parent>
+    <groupId>com.example</groupId>
+    <artifactId>demo</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <name>demo</name>
+    <description>Demo project for Spring Boot</description>
+
+    <properties>
+        <java.version>1.8</java.version>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.junit.vintage</groupId>
+                    <artifactId>junit-vintage-engine</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.10</version>
+            <scope>provided</scope>
+        </dependency>
+
+    </dependencies>
+
+    <build>
         <plugins>
-          <plugin>
-            <groupId>io.openliberty.tools</groupId>
-            <artifactId>liberty-maven-plugin</artifactId>
-            <version>${openliberty.maven.version}</version>
-            <executions>
-              <execution>
-                <id>package-server</id>
-                <phase>package</phase>
-                <goals>
-                  <goal>create</goal>
-                  <goal>install-feature</goal>
-                  <goal>deploy</goal>
-                  <goal>package</goal>
-                </goals>
-                <configuration>
-                  <outputDirectory>target/wlp-package</outputDirectory>
-                </configuration>
-              </execution>
-            </executions>
-            <configuration>
-              <appArchive>${project.build.directory}/${final.name}.war</appArchive>
-              <include>runnable</include>
-              <serverName>${final.name}</serverName>
-              <bootstrapProperties>
-                <project.name>${final.name}</project.name>
-                <jwt.issuer>https://server.example.com</jwt.issuer>
-              </bootstrapProperties>
-            </configuration>
-          </plugin>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
         </plugins>
-      </build>
-    </profile>
-  </profiles>
+    </build>
+
 </project>

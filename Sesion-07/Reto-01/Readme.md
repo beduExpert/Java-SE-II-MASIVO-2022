@@ -1,7 +1,8 @@
 # Reto 1
 
 ## Objetivos
-* Reafirmar el conocimiento de microprofile
+
+* Reafirmar el conocimiento de Spring boot
 
 ## Requisitos
 
@@ -10,53 +11,59 @@
 
 ## Desarrollo
 
-En el Ejercicio 1 partimos de un proyecto el cual imprime "Hola mundo"
+En el Ejercicio 02 partimos de un proyecto el cual recibe un Auto
 
-![hola mundo](./img/img_01.png)
+Para completar este reto agrega una nuevo metodo de tipo post que reciba un objeto de tipo "Casa". 
 
-En esta ocasión debemos colocar una nueva ruta "/data/nuevo" en el proyecto por lo que hay que crear un nuevo controlador, similar a `HelloController`.
+Para esto creamos la clase con los siguientes atributos:
 
-![hola mundo](./img/img_05.png)
+```java
+private int id;
+private String color;
+private int pisos;
+```
 
-Este nuevo metodo llamado "nuevo" debe imprimir en el navegador "Mi nuevo mensaje!".
+En nuestro DemoController crear el metodo con la ruta "/casa" en el proyecto y que imprima el objeto.
 
 <br/>
 
 <details>
   <summary>Solución</summary>
 
-1. Crea la clase NuevoController
+1. Crea la clase Casa dentro de entity
 
-    <img src="img/img_02.png" alt="Nueva clase"/>
-
-2. Dentro de la nueva clase agrega el siguiente código:
-    
-    <img src="img/img_03.png" alt="Código"/>
+    <img src="img/img_01.png" alt="Nueva clase"/>
 
     ```java
-    @Path("/nuevo")
-    @Singleton
-    public class NuevoController {
-        @GET
-        public String sayNuevo() {
-            return "Mi nuevo mensaje!";
-        }
+   package com.example.demo.entity;
+
+    import lombok.Data;
+
+    @Data
+    public class Casa {
+
+        private int id;
+        private String color;
+        private int pisos;
+    }
+    ```
+  
+2. Dentro del DemoController agrega el nuevo servicio apuntando a la entidad Casa:
+    
+    <img src="img/img_02.png" alt="Código"/>
+
+    ```java
+    @PostMapping("/casa")
+    public void recibeCasa(@RequestBody Casa casa){
+        log.info(casa.toString());
     }
     ```
 
-3. Ejecuta los pasos del ejemplo 01.
+3. Ejecuta el proyecto y consulta el nuevo servicio desde Postman.
 
-    ```terminal
-    mvn clean package
-    ```
+    <img src="img/img_03.png" alt="Código"/>
 
-    ```terminal
-    java -jar target/demo.jar
-    ```
-
-4. Vuelve a ejecutar la prueba
-
-    Consulta la url **localhost:9080/data/nuevo**
+4. Comprueba los datos desde la terminal.
 
     <img src="./img/img_04.png" alt="Resultado"/>
 
@@ -67,4 +74,4 @@ Este nuevo metodo llamado "nuevo" debe imprimir en el navegador "Mi nuevo mensaj
 <br/>
 <br/>
 
-[Siguiente ](../Ejemplo-02/Readme.md)(Ejemplo 02)
+[Siguiente ](../Ejemplo-03/Readme.md)(Ejemplo 03)

@@ -125,4 +125,4 @@
 <br/>
 <br/>
 
-[Siguiente ](../Reto-03/Readme.md)(Reto 3)
+[Siguiente ](../Reto-02/Readme.md)(Reto 2)

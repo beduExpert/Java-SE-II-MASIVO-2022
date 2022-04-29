@@ -21,17 +21,16 @@
 - Usar MicroProfile para crear un microservicio
 
 	- [Ejemplo 01](./Ejemplo-01/Readme.md)
-	- [Reto 01](./Reto-01/Readme.md)
 
 - Usar Spring boot para crear un microservicio
 
 	- [Ejemplo 02](./Ejemplo-02/Readme.md)
-	- [Reto 02](./Reto-02/Readme.md)
+	- [Reto 01](./Reto-01/Readme.md)
 
 - Usar Spring boot WebFlux para crear un microservicio
 
 	- [Ejemplo 03](./Ejemplo-03/Readme.md)
-	- [Reto 03](./Reto-03/Readme.md)
+	- [Reto 02](./Reto-02/Readme.md)
 
 
 - Postwork
