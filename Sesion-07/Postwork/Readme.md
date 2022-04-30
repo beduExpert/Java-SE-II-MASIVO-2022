@@ -58,7 +58,7 @@ Completen las siguientes instrucciones para completar el séptimo postwork:
 
 5. Ahora generamos el uri de conexión desde MongoAtlas.
 
-    - Damos clic en *Connect*
+    - Damos clic en *Connect*<br/>
     ![Paso 1](./img/img_06.png)
 
     - Después *Connect your application*

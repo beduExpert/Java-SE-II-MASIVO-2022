@@ -12,19 +12,21 @@
 
 ## 🚀 Desarrollo
 
-Completa las siguientes instrucciones para completar el octavo postwork:
+**Realizar en equipo**
 
-1. Te recomendamos leer detenidamente cada uno de estos pasos. Después aplicarlos uno a uno.
+Completen las siguientes instrucciones para completar el octavo postwork:
 
-2. Revisa el código del proyecto desarrollado durante este módulo y verifica que implemente buenas prácticas.
+1. Recomendamos leer detenidamente cada uno de estos pasos. Después aplicarlos uno a uno.
 
-3. Agrega comentarios donde creas conveniente aplicar buenas prácticas.
+2. Revisen el código del proyecto desarrollado durante este módulo y verifiquen que implemente buenas prácticas.
 
-4. Una vez revisado todo el proyecto. aplica una a una cada refactorización.
+3. Agreguen comentarios donde crean conveniente aplicar buenas prácticas.
 
-    No olvides estar ejecutando el proyecto cada vez que modifiques bloques importantes. "Clases, interfaces, métodos..."
+4. Una vez revisado todo el proyecto. apliquen una a una cada refactorización.
 
-5. Recuerda guardar evidencias de las modificaciones, las necesitarás para completar el checklist de este postwork.
+    No olviden estar ejecutando el proyecto cada vez que modifiquen bloques importantes. "Clases, interfaces, métodos..."
+
+5. Recuerden guardar evidencias de las modificaciones, las necesitarán para completar el checklist de este postwork.
 
 _Nota_ Esta sesión no incluye código ya que, al ser un proyecto que el estudiante ha desarrollado a lo largo del módulo, es imposible saber qué archivos necesitan ser refactorizados.
 
@@ -32,7 +34,7 @@ _Nota_ Esta sesión no incluye código ya que, al ser un proyecto que el estudia
 
 ## ✅ Checklist 
 
-Asegúrate que tu postwork contenga todo lo siguiente, ya que esto se evaluará al término del módulo.
+Asegúrate que el postwork contenga todo lo siguiente, ya que esto se evaluará al término del módulo.
 
 - [ ] El proyecto necesitó aplicar refactorizaciones "Buenas prácticas".
 

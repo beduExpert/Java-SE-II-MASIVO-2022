@@ -13,7 +13,7 @@
 
 Para completar este reto, necesitas aplicar las buenas practicas aprendidas en el ejemplo 01 de está seción.
 
-En la siguiente dirección encontraras el proyecto con el que trabajarás en este reto. [Proyecto](./codigo).
+En la siguiente dirección encontrarás el proyecto con el que trabajarás en este reto. [Proyecto](./codigo).
 
 _Nota:_ El código cumple con el requisito funcional, pero es poco legible, te recomendamos moficicar los siguiente:
 
