@@ -3,7 +3,7 @@
 ## Objetivo
 
  - Crear una entidad que represente la información de la tabla **partido**.
- - Crear un *repositorio* que permita trabajar con la entidad **Partido**.
+ - Generar un *repositorio* que permita trabajar con la entidad **Partido**.
 
 ## Requisitos
 
