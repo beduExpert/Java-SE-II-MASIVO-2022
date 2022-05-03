@@ -19,35 +19,19 @@ Completen las siguientes instrucciones para realizar el segundo postwork:
 
 1. Utilicen el proyecto del postwork 1.
 
-2. Generen un nuevo package con el nombre de multithreading 
+2. Generen un nuevo package con el nombre de multithreading.
 
-3. Crea la clase CalculadorPromedioCurso que implemente un Runnable, su constructor deberá obtener el curso, con las calificaciones a promediar; Además el run deberá calcular el promedio y mostrar el resultado junto con el nombre del curso.
+3. Un miembro del equipo creará la clase CalculadorPromedioCurso que implemente un Runnable, su constructor deberá obtener el curso, con las calificaciones a promediar; además, el run deberá calcular el promedio y mostrar el resultado junto con el nombre del curso.
 
-4. Generen la clase Postwork2  la cual deberá generar los cursos (Cuatro como mínimo) con calificaciones aleatorias para cada uno de sus estudiantes. Como muestra dejaremos 20 estudiantes por curso.
+4. Otra persona deberá generar la clase Postwork2 la cual creará los cursos (cuatro como mínimo) con calificaciones aleatorias para cada uno de sus estudiantes. Como muestra dejaremos 20 estudiantes por curso.
 
-5. Una vez generada la información deberán ejecutar el Runnable con un ExecutorService. Donde cada hilo deberá calcular cada curso.
+5. Una vez generada la información otro miembro del equipo ejecutará el Runnable con un ExecutorService. Donde cada hilo deberá calcular cada curso.
 
 <br/>
 
 A continuación dejamos una imagen donde pueden visualizar el flujo general que tomará la aplicación.
 
 ![diagrama1](img/diagrama1.png)
-
-<br/>
-<br/>
-
-## ✅ Checklist 
-
-Asegúrate que el postwork contenga todo lo siguiente, ya que esto se evaluará al término del módulo.
-
-- [ ] CalculadorPromedioCurso es un runnable y su constructor recibe un curso.
-
-- [ ] CalculadorPromedioCurso calcula el promedio de las calificaciones e imprime el resultado.
-
-- [ ] Postwork2 genera por lo menos 4 cursos con 20 estudiantes con calificaciones aleatorias.
-
-- [ ] Los cursos son promediados con hilos independientes con ExecutorService.
-
 
 <br/>
 <br/>
