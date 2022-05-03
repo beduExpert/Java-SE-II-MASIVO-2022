@@ -1,11 +1,10 @@
 
-# :wave: Sesión 02: Multithreading y procesamiento concurrente
+# :wave: Sesión 02: Multi Hilos y procesos concurrentes
 
 ## 🎯  Objetivo de la sesión:
 
-- Creación de hilos
-- Inplementación de la interface Runnable
-- Uso de pools de Threads
+- Generar hilos y utilizar los pools
+- Implementar la interface Runnable
 
 ## ⚙ Requisitos
 
@@ -16,26 +15,26 @@
 
 ## Objetivos 
 
-- Comprender la diferencia entre un proceso y un hilo
-- Conocer la utilidad de la programación mediante el uso de hilos.
-- Conocer la clase Thread y la interfaz Runnable de Java, así como la forma de crear hilos con ellas.
+- Comprobar la diferencia entre un proceso y un hilo.
+- Utilizar la programación mediante el uso de hilos.
+- Analizar la clase Thread y la interfaz Runnable de Java.
 
 ## Organización de la clase 
 
-- Creación de hilos extendiendo la clase Thread
+Java threads es la clase base de Java para definir hilos que se ejecutan dentro de un mismo programa; ahora se realizará la creación de hilos extendiendo la clase Thread.
 
-	- [Ejemplo 01](./Ejemplo-01/Readme.md)
-	- [Reto 01](./Reto-01/Readme.md)
-	
-- Creación de hilos extendiendo la interface Thread	
+- [Ejemplo 01](./Ejemplo-01/Readme.md)
+- [Reto 01](./Reto-01/Readme.md)
 
-	- [Ejemplo 02](./Ejemplo-02/Readme.md)
-	- [Reto 02](./Reto-02/Readme.md)
-	
-- Uso de Thread	Pools
+La interfaz Runnable es la forma más normal para crear hilos; ahora se realizará la creación de hilos extendiendo la interface Thread.
 
-	- [Ejemplo 03](Ejemplo-03)
+- [Ejemplo 02](./Ejemplo-02/Readme.md)
+- [Reto 02](./Reto-02/Readme.md)
 
-- Postwork
+Un thread pool reutiliza los threads creados previamente para ejecutar tareas actuales y ofrece una solución al problema de la sobrecarga del ciclo de subprocesos y la hiperpaginación de recursos; ahora utilizarás los Thread Pools.
 
-	- [Postwork](./Postwork/Readme.md)
+- [Ejemplo 03](Ejemplo-03)
+
+Postwork
+
+- [Postwork](./Postwork/Readme.md)
