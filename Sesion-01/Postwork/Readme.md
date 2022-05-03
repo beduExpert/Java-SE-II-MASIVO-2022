@@ -24,7 +24,7 @@ Sigan las siguientes instrucciones:
 
 1. Un elemento del equipo deberá clonar el proyecto de la carpeta [base](./base).
 
-2. A partir de los siguientes diagramas generen las entidades, las cuales serán utilizadas como modelos, otro elemento creará las siguientes entidades.
+2. A partir de los siguientes diagramas generen las entidades, las cuales serán utilizadas como modelos, otra persona creará las siguientes entidades.
 
     ![Clases](img/Diagrama_de_clases.png)
 
