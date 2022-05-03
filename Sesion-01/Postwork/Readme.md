@@ -3,7 +3,6 @@
 
 ## 🎩 Objetivo
 
-- Formar equipos de entre dos y tres integrantes.
 - Practicar las consultas CRUD sobre la base de datos.
 - Crear las entidades y repositorios que usaremos para el proyecto.
 
@@ -21,11 +20,11 @@ A continuación deberán definir el proyecto, con el que trabajarán el resto de
 
 *Recuerda que el trabajo es en equipo.*
 
-Sigue estas instrucciones:
+Sigan las siguientes instrucciones:
 
-1. Clonen el proyecto de la carpeta [base](./base).
+1. Un elemento del equipo deberá clonar el proyecto de la carpeta [base](./base).
 
-2. A partir de los siguientes diagramas generen las entidades, las cuales serán utilizadas como modelos.
+2. A partir de los siguientes diagramas generen las entidades, las cuales serán utilizadas como modelos, otro elemento creará las siguientes entidades.
 
     ![Clases](img/Diagrama_de_clases.png)
 
@@ -37,7 +36,7 @@ Sigue estas instrucciones:
     
     c. Materia
 
-3. Ahora generen los repositorios.
+3. También generen los repositorios.
 
     a. CursoRepository
     
@@ -45,7 +44,7 @@ Sigue estas instrucciones:
 
     c. MateriaRepository
 
-4. Ahora generen los siguientes casos de prueba:
+4. Una vez creados los repositorios, alguién más desarrollará los siguientes casos de prueba:
 
     - Crear y almacenar (Por lo menos uno de cada uno):
         
@@ -57,30 +56,13 @@ Sigue estas instrucciones:
         
     - Una vez creado el curso, agregar la calificación del estudiante.
 
-5. Ya para terminar recomendamos buscar información sobre las siguientes anotaciones 
+5. Para finalizar, se recomienda que como equipo busquen información sobre las siguientes anotaciones. 
 
     - @ElementCollection
     
     - @CollectionTable
     
     - @MapKeyJoinColumn.
-
-<br/>
-<br/>
-
-## ✅ Checklist 
-
-Asegúrate que el postwork contenga todo lo siguiente, ya que esto se evaluará al término del módulo.
-
-- [ ] El usuario puede ejecutar el proyecto base.
-
-- [ ] El proyecto contiene los tres modelos (Curso, Estudiante y Materia).
-
-- [ ] El proyecto contiene los tres repositorios (CursoRepository, EstudianteRepository y MateriaRepository)
-
-- [ ] Las pruebas crean y almacenan, estudiante, materia y curso.
-
-- [ ] Las pruebas asignan la calificación de algún estudiante en un curso.
 
 <br/>
 <br/>
