@@ -3,7 +3,8 @@
 
 ## 🎯  Objetivo de la sesión:
 
-- Programación Funcional.
+- Aplicar el paradigma de programación funcional
+- Utilizar las características funcionales de Java
 
 ## ⚙ Requisitos
 
@@ -14,22 +15,25 @@
 
 ## Objetivos 
 
-- Conocer el paradigma de Programación Funcional.
-- Aprender a usar las características funcionales de Java.
+- Aplicar el paradigma de programación funcional
+- Utilizar las características funcionales de Java
 
-## Organización de la clase 
+## Organización de la clase
 
-- Definición e implementación de interfaces funcionales:
-	- [Ejemplo 01](./Ejemplo-01/Readme.md)
-	- [Reto 01](./Reto-01/Readme.md)
-	
-- High Order Functions	
-	- [Ejemplo 02](./Ejemplo-02/Readme.md)
-	- [Reto 02](./Reto-02/Readme.md)
-	
-- Streams	
-	- [Ejemplo 03](./Ejemplo-03/Readme.md)
+Las interfaces funcionales tienen un método específico a implementar, es decir, cada interfaz se convierte en una interfaz funcional; ahora se analizarán las interfaces funcionales:
 
-- Postwork
+- [Ejemplo 01](./Ejemplo-01/Readme.md)
+- [Reto 01](./Reto-01/Readme.md)
 
-	- [Postwork](./Postwork/Readme.md)
+Las High Order Functions o funciones de orden superior son funciones que operan sobre otras funciones, mediante argumentos o devolviéndolas; ahora se practicarán las High Order Functions:
+
+- [Ejemplo 02](./Ejemplo-02/Readme.md)
+- [Reto 02](./Reto-02/Readme.md)
+
+Los Streams se aplican de forma unitaria de elemento a elemento, diseñando un flujo de trabajo; ahora se practicarán los Streams:
+
+- [Ejemplo 03](./Ejemplo-03/Readme.md)
+
+Postwork
+
+- [Postwork](./Postwork/Readme.md)
