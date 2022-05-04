@@ -15,11 +15,11 @@
 
 **Realizar en equipo**
 
-El director de la escuela solicitó que implementen un sistema de inscripción de alumnos que notifique al maestro cuando un alumno se haya inscrito a un curso y además le muestre la cantidad de alumnos que tiene su curso, sin bloquear la plataforma para que más estudiantes puedan inscribirse al mismo tiempo.
+El director de la escuela solicitó que implementen un sistema de inscripción de alumnos que notifique al maestro cuando un alumno se haya inscrito a un curso y además le muestre la cantidad de alumnos que tiene su curso sin bloquear la plataforma para que más estudiantes puedan inscribirse al mismo tiempo.
 
 Es por esto que han considerado que la implementación más fácil será mediante el uso de un **EventLoop** que reciba la información del alumno y el curso al que se quiere inscribir, notificando en un **worker** al maestro de la inscripción.
 
-Tu tarea consiste en implementar el EventLoop necesario para esta plataforma, así como el worker que notifique al maestro.
+Su tarea consiste en implementar el EventLoop necesario para esta plataforma, así como el worker que notifique al maestro.
 
 El diagrama 1 muestra cómo sería el flujo del EventLoop
 
@@ -27,11 +27,11 @@ El diagrama 1 muestra cómo sería el flujo del EventLoop
 
 <br/>
 
-Completa las siguientes instrucciones para completar tu cuarto postwork:
+Completen y dividan equitativamente las siguientes instrucciones para completar tu cuarto postwork:
 
 1. Utilicen el proyecto del postwork 3.
 
-2. Crea un nuevo package con el nombre de **async** 
+2. Generen un nuevo package con el nombre de **async** 
 
 3. Generen el modelo **SolicitudEstudiante** el cual tendrá:
 
@@ -39,7 +39,7 @@ Completa las siguientes instrucciones para completar tu cuarto postwork:
 
     - Métodos get y set tanto para Estudiante como para Curso.
 
-4. Crea la interfaz **NotificadorInscripcion**, la cual notificará al maestro cada que se reciba una solicitud.
+4. Desarrollen la interfaz **NotificadorInscripcion**, la cual notificará al maestro cada que se reciba una solicitud.
 
 5. Generen la clase **ReceptorSolicitudes** “Debe implementar de Runnable” la cual se encargará de:
 
@@ -51,34 +51,17 @@ Completa las siguientes instrucciones para completar tu cuarto postwork:
 
     - Retornar si se encuentra en ejecución. “A través de un método”.
 
-6. Crea la clase InscripcionAlumnos “Contendrá el main” la cual se encargará de generar:
+6. Desarrollen la clase InscripcionAlumnos “Contendrá el main” la cual se encargará de generar:
 
     - Cursos (Por lo menos cuatro).
 
     - Estudiantes (Por lo menos veinte).
 
-7. **InscripcionAlumnos** deberán agregar las solicitudes, con sus respectivos estudiantes y cursos. además notificar con un **event Loop** cuando:
+7. En **InscripcionAlumnos** deberán agregar las solicitudes, con sus respectivos estudiantes y cursos. además notificar con un **event Loop** cuando:
 
     - Un alumno se inscribe a un curso.
 
     - En un worker al maestro de que se realizó dicha inscripción.
-
-<br/>
-
-## ✅ Checklist 
-
-Asegúrate que el postwork contenga todo lo siguiente, ya que esto se evaluará al término del módulo.
-
-- [ ] SolicitudEstudiante recibe Estudiante y Curso en su constructor, además tiene sus get() y set().
-
-- [ ] NotificadorInscripcion es una interfaz y tiene un método para notificar.
-
-- [ ] ReceptorSolicitudes puede agregar solicitudes a una lista, retornar el estado de la ejecución así como iniciar y detener la ejecución.
-
-- [ ] InscripcionAlumnos genera y agrega por lo menos cuatro cursos y veinte estudiantes
-
-- [ ] InscripcionAlumnos notifica con un eventLoop y worker cada que un alumno se inscribe a un curso y al maestro que se realizó la inscripción.
-
 <br/>
 <br/>
 
