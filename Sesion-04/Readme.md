@@ -19,17 +19,17 @@
 
 ## Organización de la clase 
 
-Recolectando información
+Un proceso asíncrono es una función que ejecuta una tarea en segundo plano sin la necesidad de esperar a que finalice la tarea; ahora se realizarán un ejercicio y un ejemplo respecto al tema:
 
 - [Ejemplo 01](./Ejemplo-01/Readme.md) 
 - [Reto 01](./Reto-01/Readme.md) 
-	
-Recolectando información con CompletableFuture
+
+CompletableFuture se utiliza para la programación asíncrona en Java, tener este tipo de paralelismo mejora enormemente el rendimiento de sus programas; ahora se ejemplificará por medio de la recolección de información con CompletableFuture:
 
 - [Ejemplo 02](./Ejemplo-02/Readme.md)
 - [Reto 02](./Reto-02/Readme.md)
-	
-Event loop
+
+El Event loop es una cola de funciones, cada función devuelve un valor que la inserta en una cola o fila; ahora se practicará el Event loop:
 
 - [Ejemplo 03](./Ejemplo-03/Readme.md)
 - [Reto 03](./Reto-03/Readme.md)
