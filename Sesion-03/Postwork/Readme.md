@@ -19,40 +19,26 @@ Completa las siguientes instrucciones para completar el tercer postwork:
 
 1. Utilicen el proyecto del postwork 2.
 
-2. Crea un nuevo package con el nombre de tools 
+2. Creen un nuevo package con el nombre de tools.
 
-3. Generen la clase **ReporteCalificaciones** la cual se encargará de:
+3. Un miembro del equipo deberá generar la clase **ReporteCalificaciones** la cual se encargará de:
 
     - Generar la lista
     - Ordenar alfabéticamente (Curso)
     - Ordenar por calificaciones (Descendente)
     - ***Recuerda utilizar map, sort, collect**
 
-4. Crea la prueba **ReporteCalificacionesTest** la cual se encargará de generar:
+4. Otra persona realizará la prueba **ReporteCalificacionesTest** la cual se encargará de generar:
+
     - Materia
     - Estudiantes (Por lo menos tres)
     - Curso
     - Enviar la información a la clase creada en el paso tres
 
-5. Agrega las siguientes pruebas a **ReporteCalificacionesTest**:
+5. Por último, el último miembro realizará las siguientes pruebas a **ReporteCalificacionesTest**:
 
     - Ordena alfabéticamente (Curso)
     - Ordena por calificaciones (Descendente)
-
-
-<br/>
-
-## ✅ Checklist 
-
-Asegúrate que el postwork contenga todo lo siguiente, ya que esto se evaluará al término del módulo.
-
-- [ ] ReporteCalificaciones puede generar la lista de calificaciones.
-
-- [ ] ReporteCalificaciones puede ordenar cursos y calificaciones.
-
-- [ ] ReporteCalificacionesTest ejecuta las funciones de ReporteCalificaciones para generar y ordenar los datos
-
-- [ ] Las pruebas se ejecutan con éxito. (Sin warnings y/o errores)
 
 <br/>
 <br/>
