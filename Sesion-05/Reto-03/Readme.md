@@ -75,13 +75,16 @@ Crea una nueva clase Agenda con el nombre completo y el número y haz que devuel
       @Test
       @DisplayName("Reto 3")
       void reto3() {
-         E3Controller controller = new E3Controller();
+        String NOMBRE_QUERY = "Dia";
+        String NOMBRE_COMPLETO = "Diana Sánchez García";
+        String TELEFONO = "5550000002";
 
-         controller.buscarPorNombre("NOMBRE_QUERY")
-            .subscribe(a -> {
-               assertThat(a.getNombreCompleto()).isEqualTo("NOMBRE_COMPLETO");
-               assertThat(a.getTelefono()).isEqualTo("TELEFONO");
-            });
+        E3Controller controller = new E3Controller();
+        controller.buscarPorNombre(NOMBRE_QUERY)
+                .subscribe(a -> {
+                    assertThat(a.getNombreCompleto()).isEqualTo(NOMBRE_COMPLETO);
+                    assertThat(a.getTelefono()).isEqualTo(TELEFONO);
+                });
       }
       ```
 
