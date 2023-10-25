@@ -55,7 +55,7 @@
 
         @PostMapping("/auto")
         public void recibe(@RequestBody Auto auto){
-            log.info(auto.toString());
+            System.out.println(auto.toString());
         }
     }
     ```
