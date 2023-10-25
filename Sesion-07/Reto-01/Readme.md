@@ -55,7 +55,7 @@ En nuestro DemoController crear el metodo con la ruta "/casa" en el proyecto y q
     ```java
     @PostMapping("/casa")
     public void recibeCasa(@RequestBody Casa casa){
-        log.info(casa.toString());
+        System.out.println(casa.toString());
     }
     ```
 
