@@ -62,24 +62,25 @@
 
         @Service
         public class CitaServiceImpl implements CitaService {
-
+        
             private final CitaRepository repository;
-
+        
+            @Autowired
             public CitaServiceImpl(CitaRepository repository) {
                 this.repository = repository;
             }
-
-            @RequestMapping(method = RequestMethod.POST)
+        
+            @Override
             public void guardar(Cita cita) {
-
+        
                 if (repository.findAllByContenido(cita.getContenido()).size() > 0) {
                     throw new RuntimeException("La cita ya fue registrada");
                 }
-
+        
                 repository.save(cita);
             }
-
-            @RequestMapping(method = RequestMethod.GET)
+        
+            @Override
             public Cita buscarPorId(Long id) {
                 return repository.findById(id).get();
             }
