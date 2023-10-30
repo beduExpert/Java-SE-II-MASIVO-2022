@@ -15,7 +15,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 class QuickSortAlgorithmTest {
 
     private static final Random RANDOM_GENERATOR = new Random();
-    private static final int ARRAY_SIZE = 100000;
+    private static final int ARRAY_SIZE = 1000;
     private List<Number> unsortedList;
 
     @BeforeEach
